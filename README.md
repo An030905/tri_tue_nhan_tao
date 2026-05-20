@@ -1,5 +1,10 @@
 # Chess AI Arcade
 
+Thành viên nhóm :
+-Nhữ Trung Hải
+-nguyễn Trọng An
+-Phạm nguyễn Hưng
+
 ## Giới thiệu
 
 Đây là một trò chơi cờ vua sử dụng thư viện Arcade (Python) với nhiều cấp độ AI:
@@ -63,5 +68,3 @@ python main.py
 - `assets/`: Ảnh quân cờ
 
 ---
-
-Mọi thắc mắc hoặc góp ý, bạn có thể chỉnh sửa trực tiếp file hoặc liên hệ tác giả.

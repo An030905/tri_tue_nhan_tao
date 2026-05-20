@@ -13,8 +13,9 @@ TILE = BOARD_WIDTH // 8  # TILE lúc này sẽ là 90x90
 PIECE_SIZE = 80  # Ép cứng kích thước quân cờ giữ nguyên ở 80x80
 
 # Bảng màu cao cấp (Phong cách Modern Wood)
-COLOR_LIGHT = (238, 238, 210)
-COLOR_DARK = (118, 150, 86)
+COLOR_LIGHT = (245, 250, 255)
+COLOR_DARK = (42, 139, 214)
+COLOR_WHITE_PIECE = (238, 224, 196)
 COLOR_SELECTED = (246, 246, 105, 200)  # Vàng neon sáng khi chọn
 COLOR_LAST_MOVE = (186, 202, 68, 150)  # Vàng xanh cho ô vừa đi
 COLOR_HINT = (0, 0, 0, 40)  # Dấu chấm gợi ý
@@ -31,6 +32,8 @@ class AnimatedPiece(arcade.Sprite):
         # Cố định kích thước quân cờ (không dùng TILE nữa để tránh quân cờ bị to theo ô)
         self.width = PIECE_SIZE
         self.height = PIECE_SIZE
+        if piece_name.startswith("w"):
+            self.color = COLOR_WHITE_PIECE
 
         # Lưu vị trí tọa độ lưới
         self.grid_r = r
